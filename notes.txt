@@ -1,0 +1,30 @@
+OSINT Recon-ng Project on tesla.com
+
+Date: April 2025
+Tools Used: Recon-ng (on Parrot OS)
+
+Steps Performed:
+1. Created a new workspace in Recon-ng.
+2. Set the domain to tesla.com using the `domains` module.
+3. Used the following modules:
+   - recon/domains-hosts/brute_hosts
+   - recon/domains-contacts/whois_pocs
+   - recon/hosts-hosts/resolve
+4. Exported the data using sqlite from the workspace database.
+
+Findings:
+- Discovered multiple subdomains including:
+   - shop.tesla.com
+   - mobile.tesla.com
+   - wire.tesla.com
+   - auth.tesla.com
+- Collected public WHOIS contacts like email addresses and locations.
+
+Challenges:
+- Needed to install missing Recon-ng modules.
+- Learned how to explore the SQLite data.
+- Ensured everything is saved safely for GitHub upload.
+
+Purpose:
+- Educational and training exercise in Open-Source Intelligence (OSINT).
+- No intrusive or unauthorized access attempted.
